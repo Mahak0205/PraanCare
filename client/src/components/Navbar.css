@@ -1,0 +1,116 @@
+/* Navbar container */
+*{
+  margin: 0;
+}
+.navbar {
+  width: 100%;
+  background-color: #fff7ed; /* soft warm background */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+/* Top section: logo + contact info */
+.up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 2rem;
+  border-bottom: 1px solid #f0d9b5;
+  flex-wrap: wrap; /* for smaller screens */
+}
+.up .logo-wrapper {
+  transform: scale(0.8);         /* shrink logo size */
+  transform-origin: center;    /* optional: control scale direction */
+  background-color: blanchedalmond;
+}
+
+/* Contact info block */
+.contact {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  color: #6b4c3b;
+}
+
+.contact p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  
+}
+
+/* Bottom section: navigation links */
+.down {
+  background-color: #f4e7d3;
+  padding: 0.6rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Navigation links container */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Style all links */
+.nav-links a {
+  text-decoration: none;
+  color: #8b5e3c;
+  font-weight: 600;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+/* Hover effect on links */
+.nav-links a:hover {
+  background-color: #8b5e3c;
+  color: #fff7ed;
+}
+
+/* Style for logout button */
+.nav-links button {
+  cursor: pointer;
+  background-color: #8b5e3c;
+  border: none;
+  color: #fff7ed;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.25s;
+}
+
+.nav-links button:hover {
+  background-color: #6b4c3b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .up {
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+
+  .contact {
+    justify-content: center;
+    gap: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .down {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+/* ------------------- */

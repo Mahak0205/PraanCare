@@ -1,0 +1,27 @@
+# Node dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Logs
+logs
+*.log
+
+# Environment variables
+.env
+client/.env
+server/.env
+
+# Build outputs
+dist/
+build/
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+server/python_codes/mental_wellbeing/*.pkl
+
+server/python_codes/sleep/*.pkl
+
+server/python_codes/mental_wellbeing/stress_model.pkl

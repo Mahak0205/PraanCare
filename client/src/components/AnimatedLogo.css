@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  animation: fadeIn 2s ease-in-out;
+  padding: 1rem;
+}
+
+.logo-icon {
+  position: relative;
+}
+
+.heartbeat-line {
+  width: 160px;
+  height: 40px;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: dash 2.5s ease-in-out infinite;
+}
+
+.pulse-dot {
+  width: 14px;
+  height: 14px;
+  background-color: #f87171; /* warm pink */
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: pulse 1.5s infinite ease-in-out;
+  box-shadow: 0 0 0 0 rgba(248, 113, 113, 0.6);
+}
+
+.logo-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.8rem;
+  color: #000000;
+  animation: breathe 4s ease-in-out infinite;
+}
+
+.logo-title span {
+  color: #fb923c; /* soft orange */
+}
+
+.wellbeing-icon {
+  position: absolute;
+  top: -15px;
+  right: -20px;
+  font-size: 1.8rem;
+  animation: meditate 4s ease-in-out infinite;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 300;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateX(-50%) scale(0.9);
+    box-shadow: 0 0 0 0 rgba(248, 113, 113, 0.7);
+  }
+  70% {
+    transform: translateX(-50%) scale(1.1);
+    box-shadow: 0 0 0 15px rgba(248, 113, 113, 0);
+  }
+  100% {
+    transform: translateX(-50%) scale(0.9);
+    box-shadow: 0 0 0 0 rgba(248, 113, 113, 0);
+  }
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes meditate {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

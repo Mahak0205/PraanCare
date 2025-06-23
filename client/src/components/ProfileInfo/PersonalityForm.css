@@ -1,0 +1,71 @@
+.personality-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  background: #fff9f0;
+  border-radius: 1rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.personality-item {
+  opacity: 0.3;
+  transform: scale(0.98);
+  transition: all 0.4s ease;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.personality-item.active {
+  opacity: 1;
+  transform: scale(1);
+  background: #e0f7ff;
+}
+
+.personality-item label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-group label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.radio-group input[type="radio"] {
+  margin-bottom: 0.4rem;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.nav-buttons button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.nav-buttons .back-btn {
+  background: #ccc;
+}
+
+.nav-buttons .submit-btn {
+  background: #007bff;
+  color: white;
+}

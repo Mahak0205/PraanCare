@@ -1,0 +1,126 @@
+.anxiety-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e0f7fa, #e3f2fd);
+  border-radius: 1.5rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  font-family: "Segoe UI", sans-serif;
+  animation: fadeIn 0.6s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.progress-bar .line {
+  flex: 1;
+  height: 2px;
+  background-color: #bbb;
+}
+
+.progress-bar .circle {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(145deg, #004080, #0059b3);
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.question {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.option {
+  display: flex;
+  align-items: flex-start;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  white-space: normal;
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+.option:hover {
+  background: #f0f8ff;
+  border-color: #80caff;
+}
+
+.option.selected {
+  border-color: #004080;
+  background: #e0f3ff;
+}
+
+.option input {
+  margin-right: 12px;
+  margin-top: 3px;
+  accent-color: #004080;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+
+.navigation-buttons button {
+  padding: 0.6rem 1.6rem;
+  border: none;
+  background: linear-gradient(135deg, #004080, #0073e6);
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navigation-buttons button:hover:enabled {
+  background: linear-gradient(135deg, #0059b3, #3399ff);
+  transform: translateY(-2px);
+}
+
+.navigation-buttons button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+  box-shadow: none;
+}
